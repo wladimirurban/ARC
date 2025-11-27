@@ -2272,7 +2272,7 @@ def logReport_story(story: List):
     story.append(Paragraph('Logger', H1))
     story.append(Spacer(1, 6))
 
-    log = st.session_state.get('_log', [])
+    log = st.session_state._LogData
     if not log:
         story.append(Paragraph('No log entries.', BODY))
         return
