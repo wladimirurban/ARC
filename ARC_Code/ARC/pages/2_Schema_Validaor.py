@@ -295,7 +295,6 @@ else:
     with t:
         if st.button(
             label="Drop feature",
-            disabled=  not st.session_state._HasTimeStamp,
             key="_SV_DropCol_Button",
             width="stretch"
         ):
@@ -319,7 +318,6 @@ else:
     with t:
         if st.button(
             label="Drop duplicates",
-            disabled=not st.session_state._HasTimeStamp,
             key="_SV_DropDuplicates",
             width="stretch"
         ):
